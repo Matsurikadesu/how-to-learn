@@ -41,7 +41,12 @@ p, h1, h2, h3, h4, li, ul, ol {
     margin-top: 30px;
 }
 
-.title {
+.header__title {
+    margin: 0;
+    padding: 0; 
+    position: absolute;
+    align-self: center;
+    margin-left: 64px;
     width: 730px;
     line-height: 96px;
     font-size: 102px;
@@ -49,23 +54,12 @@ p, h1, h2, h3, h4, li, ul, ol {
     z-index: 10;
 }
 
-.header_title_place {
-    margin: 0;
-    padding: 0; 
-    position: absolute;
-    align-self: center;
-    margin-left: 64px;
-}
-
-.subtitle {
+.header__subtitle{
     width: 388px;
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
     z-index: 10;
-}
-
-.header_subtitle_place {
     margin: 0;
     position: absolute;
     align-self: flex-end;
@@ -73,12 +67,9 @@ p, h1, h2, h3, h4, li, ul, ol {
     margin-bottom: 30px;
 }
 
-.main-illustration{
+.header__main-illustration {
     width: 765px;
     height: 608px;
-}
-
-.header__main-illustration {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -86,12 +77,9 @@ p, h1, h2, h3, h4, li, ul, ol {
     bottom: 0;
 }
 
-.square-pic {
+.header__square-pic {
     height: 568px;
     width: 568px;
-}
-
-.header__square-pic {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -329,7 +317,7 @@ p, h1, h2, h3, h4, li, ul, ol {
     font-weight: 600;
 }
 
-.social-icon{
+.footer__social-icon{
     padding:0;
     width: 16px;
     height: 16px;
