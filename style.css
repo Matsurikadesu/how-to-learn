@@ -329,17 +329,6 @@ p, h1, h2, h3, h4, li, ul, ol {
     font-weight: 600;
 }
 
-.footer__column-links{
-    line-height: 30px;
-    font-size: 18px;
-}
-.footer__column-link {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
 .social-icon{
     padding:0;
     width: 16px;
@@ -348,11 +337,10 @@ p, h1, h2, h3, h4, li, ul, ol {
     margin-right: 10px;
 }
 
-.column_social .footer__column-link {
-    background-color: #1d1d1d;
-    padding: 15px;
-}
-
-.column_social .footer__column_heading{
-    margin-left: 15px;
+.footer__column-link{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 30px;
+    font-size: 18px;
 }
