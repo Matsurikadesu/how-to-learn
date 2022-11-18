@@ -517,3 +517,8 @@ p, h1, h2, h3, h4, li, ul, ol {
     height: 38px;
     margin: 0;
 }
+
+.khan__book-pic{
+    object-fit: cover;
+    object-position: 0 0;
+}
