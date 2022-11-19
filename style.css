@@ -145,11 +145,7 @@ p, h1, h2, h3, h4, li, ul, ol {
 }
 
 .digits {
-    display: flex;
     margin-top: 100px;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
     order: 6;
 }
 
@@ -158,9 +154,8 @@ p, h1, h2, h3, h4, li, ul, ol {
     font-size: 60px;
     font-weight: 600;
     width: 60%;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 20px;
-    margin-top: 100px;
     text-align: center;
 }
 
@@ -168,7 +163,7 @@ p, h1, h2, h3, h4, li, ul, ol {
     width: 60%;
     line-height: 34px;
     font-size: 24px;
-    margin: 0;
+    margin: 0 auto;
     font-weight: normal;
     text-align: center;
 }
@@ -179,21 +174,16 @@ p, h1, h2, h3, h4, li, ul, ol {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 1100px;
-    margin: 0;
-    padding: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
 }
 
 .table_cell {
     width: 250px;
-    margin: 0;
     margin-top: 60px;
 }
 
 .table_heading {
-    margin: 0;
     margin-bottom: 20px;
     line-height: 1.15;
     font-size: 24px;
@@ -207,13 +197,12 @@ p, h1, h2, h3, h4, li, ul, ol {
 }
 
 .table_text + .table_text {
-    margin: 0;
     margin-top: 20px;
 }
 
 .feynman {
     position: relative;
-    height: 890px;
+    min-height: 890px;
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
@@ -248,14 +237,17 @@ p, h1, h2, h3, h4, li, ul, ol {
     font-weight: normal;
     position: absolute;
     top: 50%;
-    align-self: flex-end;
-    margin: 0;
-    margin-right: 48px;
+    right: 48px;
 }
 
 .link {
     color: var(--link-color);
     text-decoration: none;
+}
+
+.link:hover{
+    transform: scale(0.9);
+    border-bottom: solid 1px grey;
 }
 
 .feynman__image {
@@ -303,12 +295,11 @@ p, h1, h2, h3, h4, li, ul, ol {
 }
 
 .footer{
-    margin: 0;
     background-color: var(--background-color-footer);
     min-height: 350px;
 }
 
-.columns{
+.footer__columns{
     width: 90%;
     display: flex;
     margin: 0 auto;
@@ -316,11 +307,15 @@ p, h1, h2, h3, h4, li, ul, ol {
     margin-bottom: 40px;
     justify-content: space-between;
 }
-.column_copyright {
+.footer__column_copyright {
     min-height: 250px;
     flex-basis: 711px;
     display: flex;
     flex-direction: column;
+}
+
+.logo_place_footer{
+    align-self: flex-start;
 }
 
 .footer__author {
@@ -332,7 +327,6 @@ p, h1, h2, h3, h4, li, ul, ol {
 }
 
 .footer__column_heading {
-    margin: 0;
     margin-bottom: 20px;
     line-height: 30px;
     font-size: 18px;
@@ -340,32 +334,28 @@ p, h1, h2, h3, h4, li, ul, ol {
 }
 
 .footer__social-icon{
-    padding:0;
     width: 16px;
     height: 16px;
-    margin: 0;
     margin-right: 10px;
 }
 
 .footer__column-link{
     padding: 0;
-    margin: 0;
     list-style: none;
     line-height: 30px;
     font-size: 18px;
 }
 
 .techniques{
-    display: flex;
     width: 80%;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     order: 2;
 }
 
 .cards{
+    margin: 0 auto;
     display: grid;
     width: 920px;
     column-gap: 100px;
@@ -403,29 +393,19 @@ p, h1, h2, h3, h4, li, ul, ol {
 }
 
 .video{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
     order: 3;
-    margin-bottom: 200px;
+    margin: 100px auto 0;
 }
 
-.iframes{
-    position: absolute;
+.video__iframes{
     display: flex;
-    margin-top: 50px;
+    justify-content: center;
+    position: relative;
+    top: 50px;
     gap: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    top: 210px;
 }
 
-.iframes iframe{
-    flex-shrink: 0;
-}
 .oakley{
-    margin-top: 100px;
     background-color: var(--background-color);
     order: 4;
     padding-top: 160px;
@@ -438,6 +418,7 @@ p, h1, h2, h3, h4, li, ul, ol {
 
 .khan{
     background-color: var(--background-color);
+    margin-top: 100px;
     order: 7;
 }
 .khan__container{
@@ -497,17 +478,18 @@ p, h1, h2, h3, h4, li, ul, ol {
     width: 620px; 
     height: 608px;
     margin-right: 48px;
+    object-fit: cover;
+    object-position: 0 0;
 }
 
 .resources{
+    margin-top: 100px;
     order: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.logo-zone{
+.resources__logo-zone{
     width: 1100px;
+    margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 217px;
 }
@@ -515,10 +497,4 @@ p, h1, h2, h3, h4, li, ul, ol {
 .resources__link{
     width: 270px;
     height: 38px;
-    margin: 0;
-}
-
-.khan__book-pic{
-    object-fit: cover;
-    object-position: 0 0;
 }
