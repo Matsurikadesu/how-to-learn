@@ -405,6 +405,10 @@ p, h1, h2, h3, h4, li, ul, ol {
     gap: 20px;
 }
 
+.video__iframes iframe{
+    border: none;
+}
+
 .oakley{
     background-color: var(--background-color);
     order: 4;
