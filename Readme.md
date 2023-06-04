@@ -1,19 +1,26 @@
-![Превью сайта](images/preview.png)
-### Научиться учиться
+# How To Learn
 
-Учебный проект от Яндекс. Задача проекта - применить на практике полученные в ходе обучения навыки работы с HTML и CSS.
+The goal of this website is to encourage people to learn new things and help them learn better.
 
-Проект представляет собой одностраничный лендинг с информацией, которая пригодится каждому, кто учится чему-то новому. 
+## Functionality of the project
 
-Перейти на сайт можно по [ссылке](https://kanae367.github.io/how-to-learn/)
+The site provides users with useful information about improving the learning process.
 
-#### Технологии использованные при разработке
+![Preview](preview.gif)
+
+You can visit website by clicking [this link](https://kanae367.github.io/how-to-learn/)
+
+## The project was made using the following technologies:
 
 - HTML
 - CSS
+- Flex
 
-#### Установка проекта
+## How to start
 
-Чтобы запустить проект на своём компьютере, скопируйте репозиторий при помощи команды:
+Clone the repository using the following command: 
 
-`git clone https://github.com/kanae367/russian-travel.git`
+`git clone https://github.com/kanae367/how-to-learn.git`
+
+
+
