@@ -217,7 +217,6 @@
 }
 
 .link:hover{
-    transform: scale(0.95);
     border-bottom: solid 1px grey;
 }
 
@@ -459,6 +458,11 @@
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 217px;
+}
+
+.resources .link{
+    display: inline-block;
+    height: fit-content;
 }
 
 .resources__link{
