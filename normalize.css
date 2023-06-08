@@ -7,17 +7,17 @@ body {
   margin: 0;
 }
 
+img{
+  pointer-events: none;
+  user-select: none;
+}
+
 main {
   display: block;
 }
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-}
-
-a {
-  background-color: transparent;
 }
 
 b,
@@ -27,4 +27,8 @@ strong {
 
 img {
   border-style: none;
+}
+
+p, h1, h2, h3, h4, li, ul, ol {
+  margin: 0;
 }

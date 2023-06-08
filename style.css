@@ -6,10 +6,6 @@
     --border-color: #bfbfbf;
 }
 
-p, h1, h2, h3, h4, li, ul, ol {
-    margin: 0;
-}
-
 .page {
     width: 1600px;
     display: flex;
@@ -17,7 +13,6 @@ p, h1, h2, h3, h4, li, ul, ol {
     margin: 0 auto;
     font-family: Arial, sans-serif;
 }
-/* Странное флексовое */
 
 .header {
     overflow: hidden;
@@ -33,15 +28,14 @@ p, h1, h2, h3, h4, li, ul, ol {
     height: 32px;
 }
 
+.logo img{
+    width: 100%;
+}
+
 .header__logo {
     position: absolute;
     left: 64px;
     top: 30px;
-}
-
-img{
-    pointer-events: none;
-    user-select: none;
 }
 
 .header__title {
@@ -286,6 +280,7 @@ img{
     height: 250px;
     flex-basis: 711px;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -293,7 +288,6 @@ img{
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
-    margin-top: auto;
     margin-bottom: 18px;
 }
 
@@ -319,8 +313,8 @@ img{
 
 .techniques{
     width: 80%;
-    margin-top: 100px;
     margin: 0 auto;
+    margin-top: 100px;
     order: 2;
 }
 
@@ -328,9 +322,8 @@ img{
     margin: 0 auto;
     display: grid;
     width: 920px;
-    column-gap: 100px;
-    row-gap: 60px;
-    grid-template-columns: 240px 240px 240px;
+    gap: 60px 100px;
+    grid-template-columns: repeat(3, 240px);
 }
 
 .cards__item{
